@@ -26,7 +26,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Gloria Arts', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || 'Data Expert ｜Notion_creator ｜Provides various TOOLS and DATA to help AI artists or Midjourney Player speed up your creation', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://gloriaart.medium.com', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://srefcode.com', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Midjourney,Blog,Sref,Sref Code,Sref seed,AIGC', // 网站关键词 英文逗号隔开
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
