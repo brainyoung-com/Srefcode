@@ -187,6 +187,17 @@ const nextConfig = {
                 key: 'Access-Control-Allow-Headers',
                 value:
                   'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+              },
+              {
+                key: 'Content-Security-Policy',
+                value: [
+                  "default-src 'self'",
+                  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://platform.x.com",
+                  "frame-src 'self' https://platform.twitter.com https://syndication.x.com",
+                  "style-src 'self' 'unsafe-inline' https://platform.x.com",
+                  "img-src 'self' https://platform.x.com https://pbs.twimg.com data:",
+                  "connect-src 'self' https://api.x.com"
+                ].join('; ')
               }
             ]
           }
