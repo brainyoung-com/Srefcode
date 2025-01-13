@@ -191,12 +191,7 @@ const nextConfig = {
               {
                 key: 'Content-Security-Policy',
                 value: [
-                  "default-src 'self'",
-                  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://platform.x.com",
-                  "frame-src 'self' https://platform.twitter.com https://syndication.x.com",
-                  "style-src 'self' 'unsafe-inline' https://platform.x.com",
-                  "img-src 'self' https://platform.x.com https://pbs.twimg.com data:",
-                  "connect-src 'self' https://api.x.com"
+                  "default-src 'self' * data: blob: 'unsafe-inline' 'unsafe-eval'"
                 ].join('; ')
               }
             ]
